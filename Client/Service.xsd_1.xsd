@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="Bagi" type="tns:Bagi"/>
+
+<xs:element name="BagiResponse" type="tns:BagiResponse"/>
+
+<xs:element name="Kali" type="tns:Kali"/>
+
+<xs:element name="KaliResponse" type="tns:KaliResponse"/>
+
+<xs:element name="Kurang" type="tns:Kurang"/>
+
+<xs:element name="KurangResponse" type="tns:KurangResponse"/>
+
+<xs:element name="Mod" type="tns:Mod"/>
+
+<xs:element name="ModResponse" type="tns:ModResponse"/>
+
+<xs:element name="Tambah" type="tns:Tambah"/>
+
+<xs:element name="TambahResponse" type="tns:TambahResponse"/>
+
+<xs:complexType name="Kali">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="KaliResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Kurang">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="KurangResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Tambah">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TambahResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Mod">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ModResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Bagi">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BagiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
